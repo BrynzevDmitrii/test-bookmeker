@@ -1,6 +1,9 @@
 .footer {
     grid-area: "footer";
     background: $black;
+    @include mobile {
+        max-width: 320px;
+    }
     &__top{
         display: flex;
         margin: 50px 40px 0 40px; 
@@ -106,6 +109,9 @@
                 p {
                     margin-bottom: 10px;
                 }
+        }
+        @include mobile {
+            display: none;
         }
     }
     .bottom-footer {

@@ -255,7 +255,7 @@ body {
 }
 @media (max-width: 320px) {
   .content-wrapper {
-    margin: 0;
+    margin: 0 0 100% 0;
   }
 }
 
@@ -421,6 +421,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-left: 10px;
+    overflow: hidden;
   }
   .menu-320__backgraund {
     position: absolute;
@@ -444,6 +445,7 @@ body {
   .menu-320 li {
     display: flex;
     z-index: 1;
+    height: 40px;
   }
 }
 
@@ -453,6 +455,12 @@ body {
 }
 .table table {
   min-width: 100%;
+}
+@media (max-width: 320px) {
+  .table {
+    width: 320px;
+    overflow: hidden;
+  }
 }
 .table__btn {
   display: flex;
@@ -480,11 +488,40 @@ body {
   margin-right: 24px;
 }
 .table__header_caunt {
-  margin-left: 10%;
+  padding-left: 15%;
 }
 .table__header_section {
   display: flex;
   align-items: flex-end;
+}
+@media (max-width: 320px) {
+  .table__header_section {
+    display: flex;
+    margin-left: 34px;
+  }
+}
+.table__header_title {
+  display: flex;
+}
+@media (max-width: 320px) {
+  .table__header_title {
+    display: none;
+  }
+}
+.table__header_title-320 {
+  display: none;
+}
+@media (max-width: 320px) {
+  .table__header_title-320 {
+    display: flex;
+  }
+}
+@media (max-width: 320px) {
+  .table__header {
+    height: 27px;
+    font-size: 14px;
+    padding-left: 10px;
+  }
 }
 
 .table__main {
@@ -496,6 +533,24 @@ body {
   font-size: 16px;
   line-height: 110%;
   padding-left: 20px;
+}
+.table__main td:not(:first-child) {
+  margin-left: 44px;
+}
+.table__main_session {
+  width: 128px;
+}
+@media (max-width: 320px) {
+  .table__main {
+    height: 42px;
+    padding-left: 10px;
+  }
+  .table__main td:not(:first-child) {
+    margin-left: 44px;
+  }
+  .table__main_session {
+    width: 165px;
+  }
 }
 
 .table__main:nth-child(odd) {
@@ -515,6 +570,11 @@ body {
 .footer {
   grid-area: "footer";
   background: #222222;
+}
+@media (max-width: 320px) {
+  .footer {
+    max-width: 320px;
+  }
 }
 .footer__top {
   display: flex;
@@ -613,6 +673,11 @@ body {
 }
 .footer .documents__sections p {
   margin-bottom: 10px;
+}
+@media (max-width: 320px) {
+  .footer .documents {
+    display: none;
+  }
 }
 .footer .bottom-footer {
   display: flex;
@@ -827,6 +892,7 @@ body {
   text-align: center;
   color: #FFFFFF;
 }
+
 .summary__share ::before {
   content: "";
   width: 100%;

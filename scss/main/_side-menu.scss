@@ -155,6 +155,7 @@
         background: $white;
         display: flex;justify-content: space-between;
         margin-left: 10px;
+        overflow: hidden;
         &__backgraund{
             position: absolute;
             width: 180px;
@@ -182,6 +183,7 @@
         li {
             display: flex;
             z-index: 1;
+            height: 40px;
         }
     
         

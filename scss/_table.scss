@@ -5,6 +5,11 @@
         min-width: 100%;
     } 
 
+    @include mobile {
+        width: 320px;
+        overflow: hidden;
+    }
+
     &__btn {
         display: flex;
         flex-direction: column;
@@ -30,14 +35,36 @@
     padding-left: 20px;
     &_reting{
         margin-right: 24px;
+        
     }
     &_caunt {
-        margin-left: 10%;
-    }
+        padding-left: 15%;
 
+    }
     &_section {
         display: flex;
         align-items: flex-end;
+        @include mobile {
+            display: flex;
+            margin-left: 34px;
+        }
+    }
+    &_title {
+        display: flex;
+        @include mobile {
+            display: none;
+        }
+    }
+    &_title-320 {
+        display: none;
+        @include mobile {
+            display: flex;
+        }
+    }
+    @include mobile {
+        height: 27px;
+        font-size: 14px;
+        padding-left: 10px;
     }
 }
 
@@ -50,11 +77,29 @@
     font-size: 16px;
     line-height: 110%;
     padding-left: 20px;
+    td:not(:first-child){
+            margin-left: 44px;
+        }
+        &_session {
+            width: 165px;
+        }
+    @include mobile {
+        height: 42px;
+        padding-left: 10px;
+        td:not(:first-child)
+         {
+            margin-left: 4px;
+        }
+        &_session {
+            width: 128px;
+        }
+    }
 }
 
 .table__main:nth-child(odd) {
     background-color: $white;
 }
+
 
 .table__main_reting{
     font-family: Proxima Nova;

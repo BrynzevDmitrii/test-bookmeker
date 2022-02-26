@@ -177,18 +177,20 @@
         text-align: center;
         color: $white
     }
-    &__share ::before {
-        content: '';
-        width: 100%;
-        height: 100%;
-        background-image: url('../../img/Pattern.png');
-        background-repeat: no-repeat;
-        position: absolute;
-        top:10%;
-        @include mobile {
-            display: none;
-        }
-
-    }
+    
 }
 
+.summary__share ::before {
+    content: '';
+    width: 18%;
+    height: 90%;
+    background-image: url('../../img/Pattern.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top:10%;
+    left: 83%;
+    @include mobile {
+        display: none;
+    }
+
+}
