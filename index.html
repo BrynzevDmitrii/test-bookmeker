@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a href="#" class="header__logo">
+                <img src="/img/Logo.svg" alt="Logo">
+            </a>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li class="header__item">Расписание</li>
+                    <li class="header__item">Игровые отчёты</li>
+                    <li class="header__item">Статистика</li>
+                    <li class="header__item">Ещё</li>
+                </ul>
+            </nav>
+            <select name="select" id="header__select" class="header__select">
+                <option value="value1" class="header__select_value1"><img src="/img/boll.svg " alt="boll"></option>
+                <option value="value2">2 опция</option>
+                <option value="value3">3 опция</option>
+            </select>
+            <img src="/img/Ava.png" alt="authorization" class="header__authorization">
+            <div class="header__basket">
+                <img class="header__basket_full" src="/img/card-bagej.svg" alt="basket">
+                <!--  для 320px -->
+                <img class="header__basket_320" src="/img/bags320.svg" alt="burger">
+                <p>1</p>
+            </div>
+            <!--  для 320px -->
+            <div class="header__burger">
+                <img class="header__burger_320" src="/img/burger.svg" alt="basket">
+            </div>
+        </header>
+        <main class="main">
+            <section class="side-menu">
+                <section class="side-menu__profile">
+                    <ul class="side-menu__profile_list">
+                        <li class="side-menu__profile_info">
+                            <img class="side-menu__profile_ava" src="/img/Ava.png" alt="ava">
+                            <p class="side-menu__profile_reiting">
+                                89.40
+                            </p>
+                            <div class="side-menu__profile_up">
+                                <img src="/img/Ratio.svg" alt="up-level">
+                            </div>
+                        </li>
+                        <p class="side-menu__profile_user">
+                            Елишакашвили Михо
+                        </p>
+
+
+                        <li class="side-menu__profile_editing">
+                            <img class="side-menu__profile_pen" src="/img/edit.svg" alt="pen">
+                            <a href="#">Редактировать</a>
+                        </li>
+                    </ul>
+
+
+                </section>
+                <aside>
+                    <nav class="side-menu__nav">
+                        <ul class="side-menu__nav_list ">
+                            <div class="side-menu__nav_wrapper active">
+                                <i><img src="/img/user_icon.png" alt="statistics"></i>
+                                <p>Статистика</p>
+                            </div>
+                            <li class="side-menu__item active">Футбол</li>
+                            <li class="side-menu__item">Баскетбол</li>
+                            <li class="side-menu__item">Волейбол</li>
+                        </ul>
+                        <ul class="side-menu__nav_list ">
+                            <div class="side-menu__nav_wrapper">
+                                <i><img src="/img/calendar.png" alt="data"></i>
+                                <p>Ближайшие игры</p>
+                            </div>
+                        </ul>
+                        <ul class="side-menu__nav_list ">
+                            <div class="side-menu__nav_wrapper">
+                                <i><img src="/img/report-icon.svg" alt="report"></i>
+                                <p>Игровые отчёты</p>
+                            </div>
+                        </ul>
+                        <ul class="side-menu__nav_list ">
+                            <div class="side-menu__nav_wrapper">
+                                <i><img src="/img/history-icon.svg" alt="history"></i>
+                                <p>История заказов</p>
+                            </div>
+                        </ul>
+                        <ul class="side-menu__nav_list ">
+                            <div class="side-menu__nav_wrapper">
+                                <i><img src="/img/log-out-icon.svg" alt="history"></i>
+                                <p>Выйти</p>
+                            </div>
+                        </ul>
+                    </nav>
+                </aside>
+                <!-- для 320рх -->
+                <ul class="menu-320" id="menu-320">
+                    <div class="menu-320__backgraund"></div>
+                    <li class="menu-320__chapter" >
+                        <div class="menu-320__chapter_title">
+                            <p> Статистика</p>
+                            <img class="" src="./img/statistic320.svg" alt="icon">
+                        </div>
+                        <!-- <ul>
+                           <li>Футбол</li>                           
+                           <li>Баскетбол</li>
+                           <li>Волейбол</li> 
+                        </ul> -->
+
+                    </li>
+                    <li class="menu-320__chapter" >
+                        <div class="menu-320__chapter_title">
+                            <p> Статистика</p>
+                            <img class="" src="./img/statistic320.svg" alt="icon">
+                        </div>
+                        <!-- <ul>
+                           <li>Футбол</li>                           
+                           <li>Баскетбол</li>
+                           <li>Волейбол</li> 
+                        </ul> -->
+
+                    </li>
+                    <li class="menu-320__chapter" >
+                        <div class="menu-320__chapter_title">
+                            <p> Статистика</p>
+                            <img class="" src="./img/statistic320.svg" alt="icon">
+                        </div>
+                        <!-- <ul>
+                           <li>Футбол</li>                           
+                           <li>Баскетбол</li>
+                           <li>Волейбол</li> 
+                        </ul> -->
+
+                    </li>
+                </ul>
+            </section>
+            <section class="content-wrapper">
+                <section class="summary">
+                    <div class="summary__achivki">
+                        <ul>
+                            <li class="summary__active">
+                                <img src="/img/ochivca-red.png" alt="active">
+                                <img src="/img/ochivca-red.png" alt="active">
+                                <img src="/img/ochivca-red.png" alt="active">
+                            </li>
+                            <li class="summary__deactive">
+                                <img src="/img/ochivca-grey.png" alt="deactive">
+                                <img src="/img/ochivca-grey.png" alt="deactive">
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul>
+                            <li class="summary__single">
+                                <img src="/img/ochivca-red.png" alt="single">
+                                <img src="/img/ochivca-red.png" alt="single">
+                                <img src="/img/ochivca-red.png" alt="single">
+                                <img src="/img/ochivca-red.png" alt="single">
+                                <img src="/img/ochivca-red.png" alt="single">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="summary__season">
+                        <ul class="summary__season_list">
+                            <li class="summary__season_item">
+                                <button type="button" class="summary__season_btn summary_active"> Все сезоны</button>
+                                <button type="button" class="summary__season_btn"> Сезон 2020/21</button>
+                            </li>
+                            <li class="summary__season_summary">
+                                <div class="summary__season_box">
+                                    <h3>Игры</h3>
+                                    <p>36</p>
+                                </div>
+                                <div class="summary__season_box">
+                                    <h3>Гол</h3>
+                                    <p>36</p>
+                                </div>
+                                <div class="summary__season_box">
+                                    <h3>Пас</h3>
+                                    <p>136</p>
+                                </div>
+                                <div class="summary__season_box">
+                                    <h3>Гол+пас</h3>
+                                    <p>136</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="summary__share">
+                        <div class="summary__share_block">
+                            <p>Поделиться</p>
+                            <a href="#"><img src="/img/facebook.svg" alt="facebook"></a>
+                            <a href="#"><img src="/img/vk.svg" alt="vk"></a>
+                            <a href="#"><img src="/img/Subtract.svg" alt="Subtract"></a>                                                        
+                        </div>
+                        
+                    </div>
+                </section>
+                <select name="select" id="main__select" class="main__select">
+                    <option value="value1" class="main__select_value">Формат </option>
+                    <option value="value2" class="main__select_value">Формат 1</option>
+                    <option value="value3" class="main__select_value">Формат 2</option>
+                </select>
+                <section class="table">
+                    <table>
+                        <tr class="table__header">
+                            <td class="table__header_session">
+                                Сезон
+                            </td>
+                            <td class="table__header_section table__header_caunt">
+                                <div class="table__btn">
+                                    <button id="up" type="button" class="table__btn_sort">
+                                        <img src="./img/sort-up.png" alt="sort-up">
+                                    </button>
+                                    <button id="down" type="button" class="table__btn_sort">
+                                        <img src="./img/sort-down.png" alt="">
+                                    </button>
+                                </div>
+                                Кол-во игр
+                            </td>
+                            <td class="table__header_section">
+                                <div class="table__btn">
+                                    <button id="up" type="button" class="table__btn_sort">
+                                        <img src="./img/sort-up.png" alt="sort-up">
+                                    </button>
+                                    <button id="down" type="button" class="table__btn_sort">
+                                        <img src="./img/sort-down.png" alt="">
+                                    </button>
+                                </div>
+                                Гол
+                            </td>
+                            <td class="table__header_section">
+                                <div class="table__btn">
+                                    <button id="up" type="button" class="table__btn_sort">
+                                        <img src="./img/sort-up.png" alt="sort-up">
+                                    </button>
+                                    <button id="down" type="button" class="table__btn_sort">
+                                        <img src="./img/sort-down.png" alt="">
+                                    </button>
+                                </div>
+                                Пас
+                            </td>
+                            <td class="table__header_section">
+                                <div class="table__btn">
+                                    <button id="up" type="button" class="table__btn_sort">
+                                        <img src="./img/sort-up.png" alt="sort-up">
+                                    </button>
+                                    <button id="down" type="button" class="table__btn_sort">
+                                        <img src="./img/sort-down.png" alt="">
+                                    </button>
+                                </div>
+                                Гол + пас
+                            </td>
+                            <td class="table__header_section">
+                                <div class="table__btn">
+                                    <button id="up" type="button" class="table__btn_sort">
+                                        <img src="./img/sort-up.png" alt="sort-up">
+                                    </button>
+                                    <button id="down" type="button" class="table__btn_sort">
+                                        <img src="./img/sort-down.png" alt="">
+                                    </button>
+                                </div>
+                                Рейтинг
+                            </td>
+                        </tr>
+                        <tr class="table__main">
+                            <td class="table__main_session">
+                                Сезон 2021/2020
+                            </td>
+                            <td class="table__main_caunt">
+                                1
+                            </td>
+                            <td class="table__main_gol">
+                                2
+                            </td>
+                            <td class="table__main_pass">
+                                3
+                            </td>
+                            <td class="table__main_gol_&_pass">
+                                4
+                            </td>
+                            <td class="table__main_reting">
+                                89.40
+                            </td>
+                        </tr>
+                        <tr class="table__main">
+                            <td class="table__main_session">
+                                Сезон 2020/2019
+                            </td>
+                            <td class="table__main_caunt">
+                                2
+                            </td>
+                            <td class="table__main_gol">
+                                1
+                            </td>
+                            <td class="table__main_pass">
+                                3
+                            </td>
+                            <td class="table__main_gol_&_pass">
+                                4
+                            </td>
+                            <td class="table__main_reting">
+                                89.40
+                            </td>
+                        </tr>
+                        <tr class="table__main">
+                            <td class="table__main_session">
+                                Сезон 2019/2018
+                            </td>
+                            <td class="table__main_caunt">
+                                1
+                            </td>
+                            <td class="table__main_gol">
+                                4
+                            </td>
+                            <td class="table__main_pass">
+                                3
+                            </td>
+                            <td class="table__main_gol_&_pass">
+                                2
+                            </td>
+                            <td class="table__main_reting">
+                                89.40
+                            </td>
+                        </tr>
+                        <tr class="table__main">
+                            <td class="table__main_session">
+                                Сезон 2018/2017
+                            </td>
+                            <td class="table__main_caunt">
+                                4
+                            </td>
+                            <td class="table__main_gol">
+                                5
+                            </td>
+                            <td class="table__main_pass">
+                                2
+                            </td>
+                            <td class="table__main_gol_&_pass">
+                                1
+                            </td>
+                            <td class="table__main_reting">
+                                89.40
+                            </td>
+                        </tr>
+                        <tr class="table__main">
+                            <td class="table__main_session">
+                                Сезон 2017/2016
+                            </td>
+                            <td class="table__main_caunt">
+                                5
+                            </td>
+                            <td class="table__main_gol">
+                                5
+                            </td>
+                            <td class="table__main_pass">
+                                2
+                            </td>
+                            <td class="table__main_gol_&_pass">
+                                1
+                            </td>
+                            <td class="table__main_reting">
+                                89.40
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="flexwrapper">
+                    <img class="footer__logo" src="/img/Logo.png" alt="">
+                    <section class="footer__contacts">
+                        <div class="footer__contacts_app">
+                            <a href="" class="footer__contacts_app-store">
+                                <img src="./img/appstore.png" alt='appstore'>
+                            </a>
+                            <a href="" class="footer__contacts_google-play">
+                                <img src="./img/googleplay.png" alt='googleplay'>
+                        </div>
+                        </a>
+                        <div class="footer__contacts_kontakt">
+                            <p>Наши контакты</p>
+                            <div class="footer__contacts_tfone">
+                                <img src="./img/telephone.svg" alt="telephone">
+                                <a href="tel:+74951090309">+7 (495) 109-03-09</a>
+                            </div>
+                            <div class="footer__contacts_mail">
+                                <img src="./img/mail.svg" alt="mail">
+                                <a href="mailto:go@crossball.ru">go@crossball.ru</a>
+                            </div>
+                        </div>
+                </div>
+                </section>
+                <section class="documents">
+                    <div class="documents__sections">
+                        <h3 active>Разделы</h3>
+                        <p>Главная</p>
+                        <p>Расписание</p>
+                        <p>Игровые отчёты</p>
+                        <p>Статистика</p>
+                    </div>
+                    <div class="documents__sections">
+                        <h3>Виды спорта</h3>
+                        <p>Футбол</p>
+                        <p>Баскетбол</p>
+                        <p>Волейбол</p>
+                    </div>
+                    <div class="documents__sections">
+                        <h3>Полезное</h3>
+                        <p>Как записываться?</p>
+                        <p>Ответы на вопросы</p>
+                        <p>Достижения</p>
+
+                    </div>
+                    <div class="documents__sections">
+                        <h3>Чё почём</h3>
+                        <p>Абонименты</p>
+                        <p>Корп. клиентам</p>
+                        <p>Партнеры</p>
+                    </div>
+                </section>
+            </div>
+            <br>
+            <section class="bottom-footer">
+                    <p>© Все права защищены</p>
+                <div class="bottom-footer_block-share">
+                    <a href="#">
+                        <img src="./img/instgrm.svg" alt="instgrm">
+                    </a>
+                    <a href="#">
+                        <img src="./img/vk.svg" alt="vk">
+                    </a>
+                    <a href="#">
+                        <img src="./img/facebook.svg" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="./img/youtube.svg" alt="youtube">
+                    </a>
+                    <a href="#">
+                        <img src="./img/telegrm.svg" alt="telegam">
+                    </a>
+                    <a href="#">
+                        <img src="./img/WA.png" alt="watsapp">
+                    </a>
+                </div>
+                <p>Сделали в Spans</p>
+            </section>
+
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+.side-menu {
+    width: 295px;
+    min-height: 800px ;
+    box-shadow: 0px 2px 8px $shadow;
+    border-radius: 10px;
+    margin: 0 0 247px 0 ;
+    @include mobile {
+        min-height: 155px;
+        margin-bottom: 20px;
+        box-shadow: none;
+        width: 320px;
+        margin: 0 0 20px 0;
+    }
+    
+    &__profile {
+        position: relative;
+        width: 295px;
+        height: 184px;
+        background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2C2C2C;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        @include mobile {
+            width: 320px;
+            height: 155px;
+            margin-bottom: 20px;
+        }
+
+
+        &_list {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0 0 20px;
+        }
+
+        &_info {
+            display: flex;
+        }
+        &_ava {
+            margin: 0 10px 50px 0;
+            @include mobile {
+                margin: 0 10px 21px 0;
+                width: 80px;
+                height: 80px;
+            }
+        }
+        &_reiting{
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 110%;
+            text-align: center;
+            color: $white;
+            margin-right: 2px;
+            @include mobile {
+                font-size: 20px;
+            }
+        }
+        &_user {
+            position: absolute;
+            width: 165px;
+            height: 44px;
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 110%;
+            color: $white;
+            top: 56px;
+            left: 110px;
+            @include mobile {
+                font-size: 16px;
+                width: 100px;
+            }
+        }
+
+        &_editing {
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 110%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            text-decoration-line: underline;
+            color: $blue-50;
+            
+        }
+
+        &_pen{
+            margin-right: 8px;
+        }
+
+        @include mobile {
+            min-height: 155px;
+            margin-bottom: 20px;
+        }
+    }
+    
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 20px;
+        
+        &_list {
+            width: 210px;
+        }
+        &_list:last-child{
+            margin-top: 60px;
+        }
+        &_wrapper {
+            height: 32px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            padding-left: 15px;
+            img{
+                margin-right: 10px;
+            }
+        }
+        @include mobile {
+            display: none;
+         }
+        
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        height: 32px;
+        margin-left: 40px;
+        padding-left: 10px;
+    }
+}
+
+.active{
+    background: $blue-10;
+    border-radius: 5px;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: $blue;
+    
+}
+
+.menu-320 {
+    display: none;
+    @include mobile {
+        position: relative;
+        width: 100%;
+        background: $white;
+        display: flex;justify-content: space-between;
+        margin-left: 10px;
+        &__backgraund{
+            position: absolute;
+            width: 180px;
+            height: 40px;
+            background: $blue;
+            border-radius: 5px;
+            margin-left: 10px;
+
+        }
+        &__chapter{
+           
+            &_title{
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                color: $white;
+                margin-top: 7px;
+                margin-left: 20px;
+            }
+        }
+        &__chapter:nth-child(n+2){
+            margin-right: 70px;
+        }
+        
+        li {
+            display: flex;
+            z-index: 1;
+        }
+    
+        
+    }
+}

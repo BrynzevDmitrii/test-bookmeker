@@ -1,0 +1,126 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 2px 4px $shadow;
+    margin-bottom: 20px;
+
+    &__burger_320 {
+        display: none;
+    }
+    
+    @include mobile {
+        max-width: 320px;
+        margin-bottom: 0px;
+        height: 60px;
+        &__logo{
+            img{
+                width: 120px;
+                height: 20px;
+            }
+            
+        }
+
+        &__burger_320 {
+            display: block;
+        }
+    }
+  
+}
+
+.header__list {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    @include mobile {
+        display: none;
+    }
+    
+}
+.header__item {
+    color: $black;
+}
+
+.header__item:last-child{
+    position: relative;
+}
+
+.header__item:last-child::before {
+    content: '';
+    background-image: url('/img/dropdown-button.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 130%;
+    top: 20%;
+
+}
+
+.header__select{
+    width: 70px;
+    height: 40px;
+    @include mobile {
+        display: none;
+    }
+}
+
+
+.header__authorization { 
+    max-width: 34px;
+    max-height: 34px;
+    @include mobile {
+        display: none;
+    }
+}
+
+.header__authorization_elipse {
+    position: absolute;
+    max-width: 40px;
+    max-height: 40px;
+    right: 236px;
+    top: 10px;
+}
+
+.header__basket {
+    position: relative;
+    max-width: 21px;
+    max-height: 28px;
+    &_full {
+        @include mobile {
+            display: none;
+        } 
+    }
+    &_320{
+        display: none;
+        @include mobile {
+            display: block;
+        }
+    }
+    p {
+        position: absolute;
+        top: 58%;
+        left:75%;
+        font-family: Proxima Nova;
+        font-size: 12px;
+        line-height: 110%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+
+.header__basket::before {
+    content: '';
+    border-radius: 50%;
+    background-color: $cyan;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include mobile {
+        display: none;
+    }
+}
+
+

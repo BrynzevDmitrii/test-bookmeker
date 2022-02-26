@@ -1,0 +1,194 @@
+.summary{
+    position: relative;
+    min-height: 184px;
+    background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2C2C2C;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+   flex-wrap: wrap;
+   @include mobile {
+       max-height: 280px;
+       flex-wrap: wrap-reverse;
+   }
+
+    &__achivki {
+        margin: 25px 55px 0 20px;
+        @include mobile {
+            margin: 10px 10px 0 10px;
+            width: 85%;
+        }
+        ul{
+            display: flex;
+        }
+    }
+
+    &__active {
+        margin-right: 60px;
+        @include mobile {
+            margin-right: 30%;
+        }
+    }
+
+    &__single {
+        margin-top: 15px;
+        @include mobile {
+            margin-top: 5px;
+        }
+    }
+
+    &__season {
+        max-width: 420px;
+        @include mobile {
+            max-width: 84%;
+            margin-left: 2.5%;
+        }
+        &_list {
+            margin-top: 20px;
+            @include mobile {
+                margin-top: 5px;
+            }
+        }
+        &_item {
+            display: flex;
+            max-height: 30px;
+            padding: 3px;
+            border: 1px solid $blue;
+            border-radius: 5px;
+          
+          
+        }
+        &_btn {
+            width: 50%;
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 110%;
+            text-align: center;
+            color: $blue-50;
+            background: none;
+            border: none;
+        }
+        &_summary {
+            display: flex;
+        }
+        &_box {
+            margin: 25px 20px 0 0 ;
+            background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2C2C2C;
+            border-radius: 5px ;
+            border: 1px solid $blue;
+            h3 {
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 110%;
+                color: $grey;
+                margin: 10px 0 5px 10px;
+                @include mobile {
+                    font-size: 12px;
+                    margin: 10px 0 5px 10px
+                }
+            }
+            p {
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 30px;
+                line-height: 140%;
+                text-align: right;
+                color: $red;
+                height: 42px;
+                margin-right: 10px;
+                margin-left: 38px;
+                @include mobile {
+                    font-size: 20px;
+                    margin-left: 22px;
+                }
+
+            }
+            @include mobile {
+                margin: 10px 10px 0 0;
+                max-width: 67px;
+                max-height: 60px;
+            }
+        }
+        &_box:last-child{
+            margin:25px 0 0 0 ;
+            @include mobile {
+                margin-top: 10px;
+            }
+        }
+    }
+
+   
+
+    &__share {
+        @include mobile {
+            position: absolute;
+            bottom:141%;
+            left: 45%;            
+        }
+        
+        &_block{
+            margin: 10px 0 0 44px;
+        img{
+            margin-right: 15px;
+            @include mobile {
+                margin-right: 10px;
+                width: 20px;
+                height: 20px;
+            }
+        }
+        }
+
+        p {
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 110%;
+            color: $blue-50;
+            margin-bottom: 7px;
+            
+        }
+
+        &_pattern {
+            position: absolute;
+            width: 90%;
+            right: 0xp;
+            bottom: 7%;
+            margin-left: 30%;
+        }
+    }
+
+    &_active {
+        height: 30px;
+        background: $blue;
+        border-radius: 3px;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 1;
+        font-family: Proxima Nova;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 110%;
+        text-align: center;
+        color: $white
+    }
+    &__share ::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-image: url('../../img/Pattern.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        top:10%;
+        @include mobile {
+            display: none;
+        }
+
+    }
+}
+
